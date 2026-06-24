@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up form</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- side page image -->
+      <div class="side-bar-image">
+        <img id="side-img" src="./images/side-bar.jpg" alt="green leaf" />
+        <p><img id="odin" src="./images/odin-lined.png" /> ODIN</p>
+      </div>
+
+      <div class="form-content">
+        <p class="remarks">
+          This is not a real online service! you know you need something like
+          this in your life to help you realize your deepest dreams sign up
+          <em>now</em> to get started.
+        </p>
+        <p class="call-out">
+          you <span style="font-style: oblique">know you</span> want to
+        </p>
+
+        <div class="sign-up form">
+          <h1>Lets do this!</h1>
+          <form action="#" method="put">
+            <div>
+              <label for="firstname">FIRST NAME</label><br />
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="eg. john"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="lastname">LAST NAME</label><br />
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="eg. doe"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">EMAIL</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="xxxxxx...@gmail.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="phone">PHONE NUMBER</label><br />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="123-456-7890"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              />
+            </div>
+
+            <div>
+              <label for="password">PASSWORD</label><br />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="6"
+                maxlength="12"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="confirm-password">CONFIRM PASSWORD</label><br />
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                minlength="6"
+                maxlength="12"
+                required
+              />
+            </div>
+          </form>
+        </div>
+        <div class="submission">
+          <button id="sub-btn" type="submit">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
